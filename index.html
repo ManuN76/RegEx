@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Glide Yes-Code</title>
+</head>
+<div>
+  <span id="result"></span>
+</div>
+<script src="function.js"></script>
+<script src="driver.js"></script>
+
+
+<script>
+   // TEST DEBUG !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   testDebug();
+
+async function testDebug() {
+let regex = { type: "string", value: "\/^(?:(?:\+|00)\d{2,3}|0)\s*[1-9](?:[\s.-]*\d{2}){4}$\/" };
+let text = { type: "string", value: "06 11 22 33 44" };
+let rettrue = { type: "string", value: 'ok' };
+let retfalse = { type: "string", value: 'bad' };
+//  let date = { type: "date-time", value: new Date().toString() };
+let result = await window.function(regex, text, rettrue, retfalse);
+document.getElementById("result").innerHTML = result;
+
+}
+</script>
+</body>
+
+</html>

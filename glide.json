@@ -1,0 +1,33 @@
+[
+  {
+    "kind": "column",
+    "name": "Test RegEx",
+    "description": "Tests a text in a RegEx format and returns the ReturnTrue or ReturnFalse value depending on the test",
+    "author": "Manu.n",
+    "params": [
+      {
+        "name": "regex",
+        "displayName": "Regex format (do not include / at the beginning and at the end)",
+        "type": "string"
+      },
+      {
+        "name": "text",
+        "displayName": "Text",
+        "type": "string"
+      },
+      {
+        "name": "rettrue",
+        "displayName": "Return value if true",
+        "type": "primitive"
+      },
+      {
+        "name": "retfalse",
+        "displayName": "Return value if false",
+        "type": "primitive"
+      }
+    ],
+    "result": {
+      "type": "primitive"
+    }
+  }
+]
