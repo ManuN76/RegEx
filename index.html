@@ -17,7 +17,10 @@
    testDebug();
 
 async function testDebug() {
-let regex = { type: "string", value: "\/^(?:(?:\+|00)\d{2,3}|0)\s*[1-9](?:[\s.-]*\d{2}){4}$\/" };
+
+  ////// LE DEBUG NE FONCTIONNE PAS : PBL REGEX ???!!!???
+  
+let regex = { type: "string", value: `^(?:(?:\+|00)\d{2,3}|0)\s*[1-9](?:[\s.-]*\d{2}){4}$` };
 let text = { type: "string", value: "06 11 22 33 44" };
 let rettrue = { type: "string", value: 'ok' };
 let retfalse = { type: "string", value: 'bad' };
